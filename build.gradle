@@ -1,10 +1,13 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.21'
+    id 'org.jetbrains.intellij' version '0.4.13'
 }
+apply plugin: 'java'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 group 'github.com.cpdncristiano.getx_snippets'
-version '1.0-SNAPSHOT'
+version '1.0.2'
 
 repositories {
     mavenCentral()
@@ -18,12 +21,21 @@ dependencies {
 intellij {
     version '2020.2.1'
 }
-patchPluginXml {
-    changeNotes """
+intellij {
+    version '2019.3'
+    plugins 'java'
+    patchPluginXml {
+        sinceBuild 193
+        changeNotes """
+      <h1>1.0.2</h1>
+       is now compatible with android studio
       <h1>1.0-SNAPSHOT</h1>
       initial release"""
+    }
 }
+
 publishPlugin {
     channels releaseChannel
     token intellijToken
 }
+

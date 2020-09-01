@@ -1,5 +1,5 @@
 <templateSet group="getx">
-  <template name="getcontroller" value="import 'package:get/get.dart';&#10;import 'package:meta/meta.dart';&#10;&#10;class $My$Controller extends GetxController {&#10;&#10;  final _$prop$ = $value$.obs;&#10;  set $prop$(value) =&gt; _$prop$.value = value;&#10;  get $prop$ =&gt; _$prop$.value;&#10;}" description="Generates GetxCtrontroller" toReformat="false" toShortenFQNames="true">
+  <template name="getcontroller" value="import 'package:get/get.dart';&#10;&#10;class $My$Controller extends GetxController {&#10;&#10;  final _$prop$ = $value$.obs;&#10;  set $prop$(value) =&gt; _$prop$ = value;&#10;  get $prop$ =&gt; _$prop$;&#10;}" description="Generates GetxCtrontroller" toReformat="false" toShortenFQNames="true">
     <variable name="My" expression="" defaultValue="&quot;My&quot;" alwaysStopAt="true" />
     <variable name="prop" expression="" defaultValue="&quot;obj&quot;" alwaysStopAt="true" />
     <variable name="value" expression="" defaultValue="&quot;''&quot;" alwaysStopAt="true" />
@@ -7,7 +7,7 @@
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getfinal_" value="&#10;final _$prop$ = $val$.obs;&#10;get $prop$ =&gt; _$prop$.value;&#10;set $prop$(val) =&gt; _$prop$.value = val;&#10;" description="Generates accessor for Controller: getter, setter and final private var" toReformat="false" toShortenFQNames="true">
+  <template name="getfinal_" value="&#10;final _$prop$ = $val$.obs;&#10;get $prop$ =&gt; _$prop$;&#10;set $prop$(val) =&gt; _$prop$ = val;&#10;" description="Generates accessor for Controller: getter, setter and final private var" toReformat="false" toShortenFQNames="true">
     <variable name="prop" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
     <variable name="val" expression="" defaultValue="&quot;''&quot;" alwaysStopAt="true" />
     <context>
@@ -21,34 +21,34 @@
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getcontrollervoid" value="import 'package:get/get.dart';&#10;import 'package:meta/meta.dart';&#10;&#10;class $My$Controller extends GetxController {&#10;$END$&#10;}" description="Generates an empty GetxCtrontroller" toReformat="false" toShortenFQNames="true">
+  <template name="getcontrollervoid" value="import 'package:get/get.dart';&#10;&#10;class $My$Controller extends GetxController {&#10;$END$&#10;}" description="Generates an empty GetxCtrontroller" toReformat="false" toShortenFQNames="true">
     <variable name="My" expression="" defaultValue="&quot;My&quot;" alwaysStopAt="true" />
     <context>
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getget" value="get $prop$ =&gt;  $otherProp$.value;$END$" description="Generates a getter for a public variable." toReformat="false" toShortenFQNames="true">
+  <template name="getget" value="get $prop$ =&gt;  $otherProp$;$END$" description="Generates a getter for a public variable." toReformat="false" toShortenFQNames="true">
     <variable name="prop" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true" />
     <variable name="otherProp" expression="" defaultValue="&quot;otherProp&quot;" alwaysStopAt="true" />
     <context>
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getget_" value="get $prop$ =&gt;  _$otherProp$.value;$END$" description="Generates a getter for a private variable." toReformat="false" toShortenFQNames="true">
+  <template name="getget_" value="get $prop$ =&gt;  _$otherProp$;$END$" description="Generates a getter for a private variable." toReformat="false" toShortenFQNames="true">
     <variable name="prop" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true" />
     <variable name="otherProp" expression="" defaultValue="&quot;otherProp&quot;" alwaysStopAt="true" />
     <context>
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getset" value="set $prop$(val) =&gt;  $otherProp$.value = val;$END$" description="Generates a setter for a public variable." toReformat="false" toShortenFQNames="true">
+  <template name="getset" value="set $prop$(val) =&gt;  $otherProp$ = val;$END$" description="Generates a setter for a public variable." toReformat="false" toShortenFQNames="true">
     <variable name="prop" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true" />
     <variable name="otherProp" expression="" defaultValue="&quot;otherProp&quot;" alwaysStopAt="true" />
     <context>
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getset_" value="set $prop$(val) =&gt;  _$otherProp$.value = val;$END$" description="Generates a setter for a private variable." toReformat="false" toShortenFQNames="true">
+  <template name="getset_" value="set $prop$(val) =&gt;  _$otherProp$ = val;$END$" description="Generates a setter for a private variable." toReformat="false" toShortenFQNames="true">
     <variable name="prop" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true" />
     <variable name="otherProp" expression="" defaultValue="&quot;otherProp&quot;" alwaysStopAt="true" />
     <context>
@@ -61,7 +61,7 @@
       <option name="FLUTTER" value="true" />
     </context>
   </template>
-  <template name="getrxmodel" value="import 'package:get/get.dart';&#10;&#10;class Rx$My$Model {&#10;  final id = 0.obs;&#10;  final name = 'name'.obs;&#10;}&#10;&#10;class $My$Model {&#10;  $My$Model({id, name});&#10;&#10;  final rx = Rx$My$Model();&#10;&#10;  get name =&gt; rx.name.value;&#10;  set name(value) =&gt; rx.name.value = value;&#10;&#10;  get id =&gt; rx.id.value;&#10;  set id(value) =&gt; rx.id.value = value;&#10;&#10;  $My$Model.fromJson(Map&lt;String, dynamic&gt; json) {&#10;    id = json['id'];&#10;    name = json['name'];&#10;  }&#10;&#10;  Map&lt;String, dynamic&gt; toJson() =&gt; {&#10;    'name' : name, 'id':id,&#10;  };&#10;}&#10;$END$" description="Generates a sample RxModel." toReformat="false" toShortenFQNames="true">
+  <template name="getrxmodel" value="import 'package:get/get.dart';&#10;&#10;class Rx$My$Model {&#10;  final id = 0.obs;&#10;  final name = 'name'.obs;&#10;}&#10;&#10;class $My$Model {&#10;  $My$Model({id, name});&#10;&#10;  final rx = Rx$My$Model();&#10;&#10;  get name =&gt; rx.name;&#10;  set name(value) =&gt; rx.name = value;&#10;&#10;  get id =&gt; rx.id;&#10;  set id(value) =&gt; rx.id = value;&#10;&#10;  $My$Model.fromJson(Map&lt;String, dynamic&gt; json) {&#10;    id = json['id'];&#10;    name = json['name'];&#10;  }&#10;&#10;  Map&lt;String, dynamic&gt; toJson() =&gt; {&#10;    'name' : name, 'id':id,&#10;  };&#10;}&#10;$END$" description="Generates a sample RxModel." toReformat="false" toShortenFQNames="true">
     <variable name="My" expression="" defaultValue="&quot;My&quot;" alwaysStopAt="true" />
     <context>
       <option name="FLUTTER" value="true" />
