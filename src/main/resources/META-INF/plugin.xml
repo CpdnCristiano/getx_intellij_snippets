@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.github.cpdncristiano.getx_snippets</id>
     <name>Getx Snippets </name>
-    <vendor email="cpdmcristiano@gmail.com" url="https://github.com/CpdnCristiano/getx_intellij_snippets">Repository gitHub</vendor>
+    <vendor email="cpdncristiano@gmail.com" url="https://github.com/CpdnCristiano/getx_intellij_snippets">cpdncristiano</vendor>
     <description><![CDATA[
     Getx Snippets, snippets for getx users.  for more details
  <a href="https://github.com/CpdnCristiano/getx_intellij_snippets">visit here</a>
