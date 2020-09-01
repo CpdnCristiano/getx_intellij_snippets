@@ -10,6 +10,7 @@
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
+
     <extensions defaultExtensionNs="com.intellij">
         <defaultLiveTemplatesProvider implementation="com.github.cpdncristiano.getx_snippets.GetxTemplateProvider" />
         <liveTemplateContext implementation="com.github.cpdncristiano.getx_snippets.GetxTemplateContext" />

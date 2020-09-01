@@ -7,7 +7,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 group 'github.com.cpdncristiano.getx_snippets'
-version '1.0.2'
+version '1.0.3'
 
 repositories {
     mavenCentral()
@@ -22,13 +22,17 @@ intellij {
     version '2020.2.1'
 }
 intellij {
-    version '2019.3'
+    version '2019.2'
     plugins 'java'
+    updateSinceUntilBuild = true
     patchPluginXml {
-        sinceBuild 193
+        sinceBuild '191'
+        untilBuild '202.*'
         changeNotes """
+      <h1>1.0.3</h1>
+       is now compatible with android studio >=3.6
       <h1>1.0.2</h1>
-       is now compatible with android studio
+       is now compatible with android studio >=4.0
       <h1>1.0-SNAPSHOT</h1>
       initial release"""
     }
