@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>com.github.cpdncristiano.getx_snippets</id>
+    <name>Getx Snippets </name>
+    <vendor email="cpdmcristiano@gmail.com" url="https://github.com/CpdnCristiano/getx_intellij_snippets">Repository gitHub</vendor>
+    <description><![CDATA[
+    Getx Snippets, snippets for getx users.  for more details
+ <a href="https://github.com/CpdnCristiano/getx_intellij_snippets">visit here</a>
+]]></description>
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplatesProvider implementation="com.github.cpdncristiano.getx_snippets.GetxTemplateProvider" />
+        <liveTemplateContext implementation="com.github.cpdncristiano.getx_snippets.GetxTemplateContext" />
+    </extensions>
+
+</idea-plugin>
