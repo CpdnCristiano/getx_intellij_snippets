@@ -2,7 +2,7 @@
 
 ## installation
 
-to download the file [**click here**](https://github.com/CpdnCristiano/getx_intellij_snippets/raw/master/plugin/version-beta.jar)
+to download the file [**click here**](https://github.com/CpdnCristiano/getx_intellij_snippets/raw/master/plugin/getx_snippets-1.0.2.jar)
 
 After you download the plugin archive , do the following:
 
